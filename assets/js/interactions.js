@@ -19,7 +19,7 @@
   // js-hover class the CSS uses to drive the actual rollover (underline
   // draw-in on nav, highlight on cast rows, lift on buttons, etc.)
   var hoverTargets = document.querySelectorAll(
-    'a, button, .cast-list li, .reel-entry'
+    'a, button, .who-list li, .timeline li, .sitenav-brand, .colophon a'
   );
   hoverTargets.forEach(function(el){
     el.addEventListener('mouseenter', function(){
