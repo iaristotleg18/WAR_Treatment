@@ -1,98 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>THE WORLD IS A GHETTO — By Isaiah Glick</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>The World Is a Ghetto — Microsite</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="logo-mark">TWG</div>
+    <nav class="site-nav">
+      <a href="#what">WHAT IT IS</a>
+      <a href="#when">WHEN IT IS</a>
+      <a href="#where">WHERE IT IS</a>
+      <a href="#who">WHO IT IS</a>
+    </nav>
+  </header>
 
-<nav class="sitenav">
-  <a href="index.html" class="sitenav-brand">The World Is a Ghetto</a>
-  <div class="sitenav-links">
-    <a href="treatment.html">Treatment</a>
-    <a href="when.html">When It Is</a>
-    <a href="where.html">Where It Is</a>
-    <a href="who.html">Who It Is</a>
-  </div>
-</nav>
+  <main>
+    <!-- HERO / MONTAGE -->
+    <section class="hero" id="hero">
 
-<script src="assets/js/audio.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
-<div id="yt-audio-frame" style="position:fixed;width:1px;height:1px;opacity:0;pointer-events:none;left:-9999px;top:-9999px;"></div>
+      <!-- INTRO OVERLAY -->
+      <div id="intro" class="overlay intro">
+        <div class="intro-inner">
+          <h1>The World Is a Ghetto</h1>
+          <p>A true story. South L.A., 1969–1979.</p>
+          <button id="startBtn" class="primary-btn">Start Experience</button>
+        </div>
+      </div>
 
-<div class="hero-rig">
+      <!-- MONTAGE STAGE -->
+      <div id="stage" class="stage"></div>
 
-  <div class="grain"></div>
-  <div class="vignette"></div>
-  <div class="flash" id="flash"></div>
+      <!-- HUD -->
+      <div class="hud">
+        <div id="flash" class="flash"></div>
+        <div class="hud-row">
+          <span id="counter" class="counter">CUT 00 / 00</span>
+          <span id="clock" class="clock">00:00.0</span>
+        </div>
+        <div class="progress">
+          <div id="fill" class="progress-fill"></div>
+        </div>
+      </div>
 
-  <div class="hud">
-    <span class="tl"><span class="rec-dot"></span>TEST REEL — DRAFT 7</span>
-    <span class="tr counter" id="counter">CUT 00 / 00</span>
-    <span class="bl">08MM · MONTAGE MODULE</span>
-    <span class="br" id="clock">00:00.0</span>
-  </div>
-  <div class="progress-track"><div class="progress-fill" id="fill"></div></div>
+      <!-- CONTROLS -->
+      <div id="controls" class="controls">
+        <button id="replayBtn">Replay</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="restartBtn">Restart</button>
+        <button id="scoreBtn">🔊 Score</button>
+      </div>
 
-  <div class="stage" id="stage"></div>
+      <!-- OUTRO -->
+      <div id="outro" class="overlay outro" style="display:none;">
+        <div class="outro-inner">
+          <h2>The World Is a Ghetto</h2>
+          <p>Scroll to read the file.</p>
+          <button id="replayBtn" class="primary-btn">Watch Again</button>
+        </div>
+      </div>
 
-  <div class="intro" id="intro">
-    <h1>Quick-Cut Montage <span class="accent">— Draft 7</span></h1>
-    <p>Straight cut of your 14 stills against words and beats pulled from the
-      full treatment — cue cards removed, pure images and words only.</p>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
-      <button class="btn primary" id="startBtn">Run Sequence</button>
-      <a class="btn" href="treatment.html">Skip to the Treatment ↓</a>
-    </div>
-  </div>
+    </section>
 
-  <div class="outro" id="outro">
-    <h1>End of <span class="accent">Test Reel</span></h1>
-    <p>That's draft 7 — your images, your treatment's language, same
-      escalating rhythm, no cue cards. Tell me if the word choices or pacing
-      need adjusting.</p>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
-      <button class="btn primary" id="replayBtn">Replay</button>
-      <a class="btn" href="treatment.html">Read the Treatment ↓</a>
-    </div>
-  </div>
+    <!-- DOSSIER SECTIONS — YOUR TEXT ONLY -->
+    <section id="what" class="panel">
+      <h3>WHAT IT IS</h3>
+      <div class="user-text">
+        <!-- YOUR TEXT GOES HERE -->
+      </div>
+    </section>
 
-  <div class="controls" id="controls" style="display:none;">
-    <button class="btn" id="pauseBtn">Pause</button>
-    <button class="btn" id="restartBtn">Restart</button>
-    <button class="btn" id="scoreBtn">🔊 Score</button>
-  </div>
+    <section id="when" class="panel">
+      <h3>WHEN IT IS</h3>
+      <div class="user-text">
+        <!-- YOUR TEXT GOES HERE -->
+      </div>
+    </section>
 
-</div>
+    <section id="where" class="panel">
+      <h3>WHERE IT IS</h3>
+      <div class="user-text">
+        <!-- YOUR TEXT GOES HERE -->
+      </div>
+    </section>
 
+    <section id="who" class="panel">
+      <h3>WHO IT IS</h3>
+      <div class="user-text">
+        <!-- YOUR TEXT GOES HERE -->
+      </div>
+    </section>
 
-<section class="masthead">
-  <div class="site">
-    <p class="eyebrow">A film treatment</p>
-    <h1 class="title">The World Is<br>a Ghetto</h1>
-    <p class="byline">By Isaiah Glick</p>
+  </main>
 
-    <div style="display:flex; gap:20px; flex-wrap:wrap;">
-      <a class="btn" style="color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:2px;" href="treatment.html">Treatment</a>
-      <a class="btn" style="color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:2px;" href="when.html">When It Is</a>
-      <a class="btn" style="color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:2px;" href="where.html">Where It Is</a>
-      <a class="btn" style="color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:2px;" href="who.html">Who It Is</a>
-    </div>
-  </div>
-</section>
+  <footer class="site-footer">
+    <span>WAR — “The World Is a Ghetto”, 1972</span>
+  </footer>
 
-<footer class="colophon">
-  <p>THE WORLD IS A GHETTO &mdash; by Isaiah Glick</p>
-</footer>
-
-<script src="assets/js/montage.js"></script>
-<script src="assets/js/scroll-effects.js"></script>
-<script src="assets/js/interactions.js"></script>
-
+  <script src="montage.js"></script>
 </body>
 </html>
