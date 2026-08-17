@@ -43,4 +43,13 @@
   } else {
     targets.forEach(function(el){ el.classList.add('in-view'); });
   }
+
+  // Safety net: if anything marked .reveal is somehow still hidden a few
+  // seconds after load (an observer that never fired, a layout edge case),
+  // force it visible rather than leave text silently missing.
+  setTimeout(function(){
+    document.querySelectorAll('.reveal:not(.in-view)').forEach(function(el){
+      el.classList.add('in-view');
+    });
+  }, 2500);
 })();

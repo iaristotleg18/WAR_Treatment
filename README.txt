@@ -9,14 +9,10 @@ FILES
   assets/          Shared images, CSS, and JS used across all four pages
 
 RUNNING IT
-  Double-clicking index.html works for everything except the score.
-
-  YouTube's embedded player needs the page to be served over http(s) to play
-  audio reliably — opening the file directly (file://) often blocks it, since
-  the browser reports the page's origin as "null." If you open the file
-  directly, you'll see a small warning on the opening screen when this happens.
-
-  To get the score working, serve the folder instead of opening the file:
+  Double-clicking index.html now works for the score too, in most cases —
+  there's a fallback that kicks in automatically if the primary method fails
+  under file://. If it's still silent after clicking "Run Sequence," serve
+  the folder instead of opening the file directly:
 
     Option A — quick local server (needs Python, already on most Macs):
       1. Open Terminal
