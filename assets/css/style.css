@@ -77,7 +77,9 @@
   .cut.active{ opacity:1; }
   .cut .field{
     position:absolute; inset:0;
-    background-size:cover;
+    background-color:var(--ink);
+    background-size:contain;
+    background-repeat:no-repeat;
     background-position:center;
     filter:contrast(1.05) saturate(1.02);
   }
