@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE WORLD IS A GHETTO — By Isaiah Glick</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/icons/favicon-180.png">
+<meta property="og:title" content="The World Is a Ghetto">
+<meta property="og:description" content="A film treatment by Isaiah Glick.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/css/style.css?v=22">
+</head>
+<body>
+
+<nav class="sitenav">
+  <a href="index.html" class="sitenav-brand">The World Is a Ghetto</a>
+  <div class="sitenav-links">
+    <a href="treatment.html">Treatment</a>
+    <a href="when.html">When It Is</a>
+    <a href="where.html">Where It Is</a>
+    <a href="who.html">Who It Is</a>
+  </div>
+</nav>
+
+<script src="assets/js/audio.js?v=22"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<div id="yt-audio-frame" style="position:fixed;width:1px;height:1px;opacity:0;pointer-events:none;left:-9999px;top:-9999px;"></div>
+
+<div class="hero-rig">
+
+  <div class="grain"></div>
+  <div class="vignette"></div>
+  <div class="flash" id="flash"></div>
+
+  <div class="hud">
+    <span class="tl"><span class="rec-dot"></span>REEL ONE &mdash; TEST CUT</span>
+    <span class="tr counter" id="counter">CUT 00 / 00</span>
+    <span class="bl">08MM &middot; MONTAGE MODULE</span>
+    <span class="br" id="clock">00:00.0</span>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="fill"></div></div>
+
+  <div class="stage" id="stage"></div>
+
+  <div class="intro" id="intro">
+    <h1>The World Is <span class="accent">a Ghetto</span></h1>
+    <p>A test reel scored to WAR &mdash; stills and words from the
+      treatment, cut together.</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
+      <button class="btn primary" id="startBtn">Run Sequence</button>
+      <a class="btn" href="treatment.html">Skip to the Treatment ↓</a>
+    </div>
+  </div>
+
+  <div class="outro" id="outro">
+    <h1>End of the <span class="accent">Reel</span></h1>
+    <p>Scored to WAR&rsquo;s &ldquo;The World Is a Ghetto,&rdquo; 1972.
+      Read the full treatment below.</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
+      <button class="btn primary" id="replayBtn">Replay</button>
+      <a class="btn" href="treatment.html">Read the Treatment ↓</a>
+    </div>
+  </div>
+
+  <div class="controls" id="controls" style="display:none;">
+    <button class="btn" id="pauseBtn">Pause</button>
+    <button class="btn" id="restartBtn">Restart</button>
+    <button class="btn" id="scoreBtn">🔊 Score</button>
+  </div>
+
+</div>
+
+
+<section class="moodboard-hero">
+  <div class="mh-bg" style="background-image:url('assets/images/01-police-beating.jpg');"></div>
+  <div class="mh-scrim"></div>
+  <div class="mh-card">
+    <div class="mh-page active">
+      <p class="mh-label">Where It Is</p>
+      <p class="mh-content">South Central<br>Los Angeles</p>
+    </div>
+    <div class="mh-page">
+      <p class="mh-label">When It Is</p>
+      <p class="mh-content">1969&ndash;1979</p>
+    </div>
+    <div class="mh-page">
+      <p class="mh-label">The Score</p>
+      <p class="mh-content">WAR &mdash; 1972</p>
+    </div>
+  </div>
+</section>
+
+<section class="masthead">
+  <div class="site">
+    <p class="eyebrow"><span class="rec-dot-mini"></span>A film treatment</p>
+    <h1 class="title">The World Is<br>a Ghetto</h1>
+    <p class="byline">By Isaiah Glick</p>
+  </div>
+</section>
+
+<div class="preview-card reveal">
+  <p class="preview-label">From the Treatment</p>
+  <p class="preview-line">1972 &middot; The Wilson Pickett Concert</p>
+  <img src="assets/images/20-sunset-vine-murder.jpg" alt="Newspaper clipping documenting the murder that catalyzed the Bloods">
+  <a class="preview-link" href="treatment.html">Read the Treatment &rarr;</a>
+</div>
+
+<nav class="index-list">
+  <a href="treatment.html" class="index-row"><span class="index-label">Treatment</span><span class="index-arrow">&rarr;</span></a>
+  <a href="when.html" class="index-row"><span class="index-label">When It Is</span><span class="index-arrow">&rarr;</span></a>
+  <a href="where.html" class="index-row"><span class="index-label">Where It Is</span><span class="index-arrow">&rarr;</span></a>
+  <a href="who.html" class="index-row"><span class="index-label">Who It Is</span><span class="index-arrow">&rarr;</span></a>
+</nav>
+
+<footer class="colophon">
+  <p>THE WORLD IS A GHETTO &mdash; by Isaiah Glick</p>
+</footer>
+
+<script src="assets/js/montage.js?v=22"></script>
+<script src="assets/js/scroll-effects.js?v=22"></script>
+<script src="assets/js/scroll-blur.js?v=22"></script>
+<script src="assets/js/hero-carousel.js?v=22"></script>
+<script src="assets/js/interactions.js?v=22"></script>
+
+</body>
+</html>
